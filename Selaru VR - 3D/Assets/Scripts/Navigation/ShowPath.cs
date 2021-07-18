@@ -8,14 +8,17 @@ public class ShowPath : MonoBehaviour
     private NavMeshAgent _meshAgent;
     private LineRenderer _playerLineRenderer;
 
+    [SerializeField] private float _startLineWidth = 0.1f;
+    [SerializeField] private float _endLineWidth = 0.1f;
+
     // Start is called before the first frame update
     void Start()
     {
         _meshAgent = GetComponent<NavMeshAgent>();
         _playerLineRenderer = GetComponent<LineRenderer>();
 
-        _playerLineRenderer.startWidth = 0.15f;
-        _playerLineRenderer.endWidth = 0.15f;
+        _playerLineRenderer.startWidth = _startLineWidth;
+        _playerLineRenderer.endWidth = _endLineWidth;
         _playerLineRenderer.positionCount = 0;
     }
 
