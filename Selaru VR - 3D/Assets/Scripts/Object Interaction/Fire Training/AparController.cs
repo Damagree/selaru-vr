@@ -42,6 +42,7 @@ public class AparController : MonoBehaviour
         {
             transform.position = attachPosition.position;
             transform.SetParent(attachPosition);
+            transform.localRotation = Quaternion.Euler(-90f, 0f, 0f);
             isTaken = true;
         }
     }

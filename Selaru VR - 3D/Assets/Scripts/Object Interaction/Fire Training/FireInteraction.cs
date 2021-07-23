@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FireInteraction : MonoBehaviour
 {
 
     [SerializeField, Tooltip("Fire Health")] private float health = 100f;
+
+    public UnityEvent eventAfterWin;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,7 +19,7 @@ public class FireInteraction : MonoBehaviour
 
         if (health <= 0)
         {
-            gameObject.SetActive(false);
+            eventAfterWin.Invoke();
         }
     }
 

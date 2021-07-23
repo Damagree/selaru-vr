@@ -3,6 +3,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TMPro;
 #if UNITY_2017_2_OR_NEWER
 using UnityEngine.XR;
 #else
@@ -32,6 +33,9 @@ public class EyeRaycaster : MonoBehaviour
     EventSystem m_eventSystem;
     PointerEventData m_pointerEvent;
 
+    [SerializeField] private GameObject pointeImage;
+    [SerializeField] private GameObject pointerPos;
+
     private void Start()
     {
         m_eventSystem = EventSystem.current;
@@ -41,17 +45,22 @@ public class EyeRaycaster : MonoBehaviour
 
     void Update()
     {
-        // Set pointer position
+        //Set pointer position
         m_pointerEvent.position =
 #if UNITY_EDITOR
-            new Vector2(Screen.width / 2, Screen.height / 2);
+                   new Vector2(Screen.width / 2, Screen.height / 2);
 #else
-            new Vector2(XRSettings.eyeTextureWidth / 2, XRSettings.eyeTextureHeight / 2);
+            new Vector2(XRSettings.eyeTextureWidth/2, XRSettings.eyeTextureHeight/2);
 #endif
+
+        pointeImage.transform.position = m_pointerEvent.position;
+        
 
         List<RaycastResult> raycastResults = new List<RaycastResult>();
         m_eventSystem.RaycastAll(m_pointerEvent, raycastResults);
 
+
+        
         // Detect selectable
         if (raycastResults.Count > 0)
         {
@@ -65,6 +74,7 @@ public class EyeRaycaster : MonoBehaviour
                     {
                         Select(newSelectable);
                         m_currentRaycastResult = result;
+                        pointerPos.GetComponent<TextMeshProUGUI>().text = m_currentRaycastResult.ToString();
                     }
                     break;
                 }

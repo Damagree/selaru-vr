@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class GazeController : MonoBehaviour
 {
@@ -12,6 +11,9 @@ public class GazeController : MonoBehaviour
     [SerializeField] private string _interactableTag = "Interactable"; // Total time to gaze to interact
     private float _gazingTime; // Gaze time passed 
 
+    [SerializeField] private GameObject loadingImage;
+    [SerializeField] private GameObject recticleImage;
+
     [Header("Pointer Setting")]
     [SerializeField] private Image _gazeTimerImage; // Loading image gaze
 
@@ -20,13 +22,16 @@ public class GazeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //loadingImage.transform.position = new Vector2(XRSettings.eyeTextureWidth / 2, XRSettings.eyeTextureHeight/ 2);
+        //recticleImage.transform.position = new Vector2(XRSettings.eyeTextureWidth / 2, XRSettings.eyeTextureHeight/ 2);
+
         // casts ray towards camera's forward direction, to detect if a GameObject is being gazed at.
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistanceInteraction))
         {
             // Make sure GameObject Tag name is correct.
             if (hit.transform.gameObject.tag == _interactableTag || (LayerMask.Equals(hit.transform.gameObject.layer, "UI") && hit.transform.gameObject.tag == _interactableTag))
-            { 
+            {
                 // GameObject detected in front of the camera.
                 if (_gazedAtObject != hit.transform.gameObject)
                 {
@@ -52,10 +57,11 @@ public class GazeController : MonoBehaviour
 
         // Check if gazing time is more or equal total gaze time to interaction
         if (_gazingTime >= _totalGazeTime)
-        {   
-            _gazedAtObject?.SendMessage("OnPointerClick"); // send message to object gazed at
+        {
+            _gazedAtObject?.GetComponent<Button>().onClick.Invoke(); // send message to object gazed at
             initGaze();
         }
+
     }
 
     // Initilize gaze so the value remain the same after interact
