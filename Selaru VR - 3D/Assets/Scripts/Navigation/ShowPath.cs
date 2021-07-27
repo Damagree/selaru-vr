@@ -24,7 +24,12 @@ public class ShowPath : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(_meshAgent.destination, transform.position) > _meshAgent.stoppingDistance)
+        if (Vector3.Distance(_meshAgent.destination, transform.position) <= _meshAgent.stoppingDistance)
+        {
+            _meshAgent.SetDestination(transform.position);
+            gameObject.GetComponent<LineRenderer>().enabled = false;
+        }
+        else if(_meshAgent.hasPath)
         {
             DrawPath();
         }
@@ -38,6 +43,7 @@ public class ShowPath : MonoBehaviour
     // Draw the ppath the player will take to reah its destination
     private void DrawPath()
     {
+        gameObject.GetComponent<LineRenderer>().enabled = true;
         _playerLineRenderer.positionCount = _meshAgent.path.corners.Length;
         _playerLineRenderer.SetPosition(0, transform.position);
 
