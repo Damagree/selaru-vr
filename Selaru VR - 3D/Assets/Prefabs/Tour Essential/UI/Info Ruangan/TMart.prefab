@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 11e890ebfa8c674439408910c2763a04, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 35ce465340917ac40a9f05a668ebd623, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -103,9 +103,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8668798054975125806}
-  m_LocalRotation: {x: -0, y: 0.92531884, z: -0, w: 0.3791902}
+  m_LocalRotation: {x: 0, y: 0.9253189, z: 0, w: 0.37918982}
   m_LocalPosition: {x: -1.945, y: 0.87, z: -18.876}
-  m_LocalScale: {x: 3.8148203, y: 0.05405824, z: 3.9564097}
+  m_LocalScale: {x: 3.8148205, y: 0.05405824, z: 3.9564102}
   m_Children:
   - {fileID: 8668798055109934700}
   m_Father: {fileID: 0}
@@ -126,10 +126,11 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8668798054975125806}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -184,8 +185,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 46.180782, z: 1}
-  m_Center: {x: 0, y: 22.590397, z: 0}
+  m_Size: {x: 0.30722407, y: 46.180782, z: 0.30467924}
+  m_Center: {x: 0.34638813, y: 22.590397, z: -0.012532817}
 --- !u!1 &8668798055109934697
 GameObject:
   m_ObjectHideFlags: 0
