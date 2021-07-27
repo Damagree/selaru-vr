@@ -8,9 +8,10 @@ public class TriggerPintu : MonoBehaviour
     [SerializeField]
     private Animator myPintu = null;
 
-    [SerializeField]
+    [Header("Animation State Name")]
+    [SerializeField, Tooltip("Nama Animasi untuk buka pintu")]
     private string pintuBuka = "";
-    [SerializeField]
+    [SerializeField, Tooltip("Nama Animasi untuk tutup pintu")]
     private string pintuTutup = "";
 
 
