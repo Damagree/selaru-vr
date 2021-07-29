@@ -8,5 +8,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sandbox/FireTraining Sample.unity
     guid: b627d186da549ad4091a8e41ccd1c147
+  - enabled: 1
+    path: Assets/Scenes/Tour/Tour Challenge.unity
+    guid: a4c5bed396393d347834e2170cb54966
+  - enabled: 1
+    path: Assets/Scenes/Tour/Tour Guide.unity
+    guid: 5be862d0a0a67e54c84b21ece6740136
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 152eab6937dd9a340aa49e98a3822cd9, type: 2}

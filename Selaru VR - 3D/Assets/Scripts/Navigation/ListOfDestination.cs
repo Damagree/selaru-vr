@@ -13,19 +13,19 @@ public class ListOfDestination : MonoBehaviour
 
     [Header("1st floor")]
     [SerializeField] private string _destinationTag1; // tag destination
-    private GameObject[] _destination1; // array of destination object
+    public GameObject[] _destination1; // array of destination object
     [SerializeField] private GameObject _content1; // parrent for content
     [Header("2nd floor")]
     [SerializeField] private string _destinationTag2; // tag destination
-    private GameObject[] _destination2; // array of destination object
+    public GameObject[] _destination2; // array of destination object
     [SerializeField] private GameObject _content2; // parrent for content
     [Header("3rd floor")]
     [SerializeField] private string _destinationTag3; // tag destination
-    private GameObject[] _destination3; // array of destination object
+    public GameObject[] _destination3; // array of destination object
     [SerializeField] private GameObject _content3; // parrent for content
     [Header("4th floor")]
     [SerializeField] private string _destinationTag4; // tag destination
-    private GameObject[] _destination4; // array of destination object
+    public GameObject[] _destination4; // array of destination object
     [SerializeField] private GameObject _content4; // parrent for content
 
     private void Awake()
@@ -42,59 +42,61 @@ public class ListOfDestination : MonoBehaviour
 
     private void Start()
     {
-        // 1st floor
-        if (_destination1 != null )
+        if (_buttonDestination != null)
         {
-            foreach (GameObject item in _destination1)
+            // 1st floor
+            if (_destination1 != null)
             {
-                GameObject newBtn = Instantiate(_buttonDestination, _content1.transform); // instantiate object
-                newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
-                newBtn.name = item.name; // change new button name to item name
-                Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
-                clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
+                foreach (GameObject item in _destination1)
+                {
+                    GameObject newBtn = Instantiate(_buttonDestination, _content1.transform); // instantiate object
+                    newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
+                    newBtn.name = item.name; // change new button name to item name
+                    Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
+                    clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
+                }
             }
-        }
 
-        // 2nd floor
-        if (_destination2 != null )
-        {
-            
-            foreach (GameObject item in _destination2)
+            // 2nd floor
+            if (_destination2 != null)
             {
-                GameObject newBtn = Instantiate(_buttonDestination, _content2.transform); // instantiate object
-                newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
-                newBtn.name = item.name; // change new button name to item name
-                Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
-                clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
-            }
-        }
 
-        // 3rd floor
-        if (_destination3 != null)
-        {
-            foreach (GameObject item in _destination3)
+                foreach (GameObject item in _destination2)
+                {
+                    GameObject newBtn = Instantiate(_buttonDestination, _content2.transform); // instantiate object
+                    newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
+                    newBtn.name = item.name; // change new button name to item name
+                    Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
+                    clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
+                }
+            }
+
+            // 3rd floor
+            if (_destination3 != null)
             {
-                GameObject newBtn = Instantiate(_buttonDestination, _content3.transform); // instantiate object
-                newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
-                newBtn.name = item.name; // change new button name to item name
-                Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
-                clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
+                foreach (GameObject item in _destination3)
+                {
+                    GameObject newBtn = Instantiate(_buttonDestination, _content3.transform); // instantiate object
+                    newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
+                    newBtn.name = item.name; // change new button name to item name
+                    Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
+                    clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
+                }
+            }
+
+            // 4th floor
+            if (_destination4 != null)
+            {
+                foreach (GameObject item in _destination4)
+                {
+                    GameObject newBtn = Instantiate(_buttonDestination, _content4.transform); // instantiate object
+                    newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
+                    newBtn.name = item.name; // change new button name to item name
+                    Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
+                    clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
+                }
             }
         }
-    
-        // 4th floor
-        if (_destination4 != null)
-        {
-            foreach (GameObject item in _destination4)
-            {
-                GameObject newBtn = Instantiate(_buttonDestination, _content4.transform); // instantiate object
-                newBtn.GetComponentInChildren<TextMeshProUGUI>().text = item.name; // change button text to item name
-                newBtn.name = item.name; // change new button name to item name
-                Button clickBtn = newBtn.GetComponent<Button>(); // initialize clickBtn with Button
-                clickBtn.onClick.AddListener(() => { _playerNavMesh.SetDestination(item.transform.position); }); // add onclick to set destination 
-            }
-        }
-        
     }
 
 
