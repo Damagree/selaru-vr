@@ -11,6 +11,7 @@ public class TimeUI : MonoBehaviour
     public float currentTime;
 
     public bool isFinished;
+    public Highscore highscore;
 
     private void Update()
     {
@@ -22,6 +23,7 @@ public class TimeUI : MonoBehaviour
 
     public void Finished(bool isFinish)
     {
+        highscore.SaveHighscore(currentTime);
         isFinished = isFinish;
     }
 
