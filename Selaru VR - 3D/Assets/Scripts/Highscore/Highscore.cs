@@ -20,10 +20,6 @@ public class Highscore : MonoBehaviour
     {
         //PlayerPrefs.SetFloat(gameMode.ToString(), 1000);
         LoadHighscore();
-        if (textHighscore != null)
-        {
-            textHighscore.text = (score / 60).ToString("00") + ":" + (score % 60).ToString("00");
-        }
     }
 
     public void SaveHighscore(float newScore)
@@ -41,5 +37,14 @@ public class Highscore : MonoBehaviour
     {
         score = PlayerPrefs.GetFloat(gameMode.ToString());
         Debug.Log("loaded " + gameMode.ToString() + " score " + (score / 60).ToString("00") + ":" + (score % 60).ToString("00"));
+        UpdateTextHighscore();
+    }
+
+    public void UpdateTextHighscore()
+    {
+        if (textHighscore != null)
+        {
+            textHighscore.text = (score / 60).ToString("00") + ":" + (score % 60).ToString("00");
+        }
     }
 }

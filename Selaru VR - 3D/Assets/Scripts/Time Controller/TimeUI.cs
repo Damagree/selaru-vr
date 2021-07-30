@@ -7,6 +7,7 @@ public class TimeUI : MonoBehaviour
 {
 
     [SerializeField, Tooltip("Time Text TMP")] private TextMeshProUGUI textTime;
+    [SerializeField, Tooltip("Score Time Text TMP")] private TextMeshProUGUI textScoreTime;
 
     public float currentTime;
 
@@ -31,6 +32,11 @@ public class TimeUI : MonoBehaviour
     {
         currentTime += Time.deltaTime;
         textTime.text = (currentTime / 60).ToString("00") + ":" + (currentTime % 60).ToString("00");
+    }
+
+    public void UpdateTimeScore()
+    {
+        textScoreTime.text = (currentTime / 60).ToString("00") + ":" + (currentTime % 60).ToString("00");
     }
 
 }
