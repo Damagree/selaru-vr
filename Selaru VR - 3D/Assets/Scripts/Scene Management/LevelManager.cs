@@ -37,4 +37,9 @@ public class LevelManager: MonoBehaviour
         yield return new WaitForSeconds(timer);
         LoadUsingTimer();
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

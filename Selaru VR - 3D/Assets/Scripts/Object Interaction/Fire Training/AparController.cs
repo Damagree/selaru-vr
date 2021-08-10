@@ -24,6 +24,7 @@ public class AparController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKey(KeyCode.Mouse0))
         {
             Shoot();
@@ -34,6 +35,18 @@ public class AparController : MonoBehaviour
             canShoot = true;
             waterParticle.SetActive(false);
         }
+#else
+        if (Input.GetButton("Fire1"))
+        {
+            Shoot();
+        }
+        if (Input.GetButtonUp("Fire1"))
+        {
+            time = 0;
+            canShoot = true;
+            waterParticle.SetActive(false);
+        }
+#endif
     }
 
     public void Take()

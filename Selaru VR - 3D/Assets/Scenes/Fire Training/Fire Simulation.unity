@@ -4418,8 +4418,51 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7301929397001553317, guid: 926f7d11f86278c49886bf254d3ca883, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301929397001553317, guid: 926f7d11f86278c49886bf254d3ca883, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301929397001553317, guid: 926f7d11f86278c49886bf254d3ca883, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301929397001553317, guid: 926f7d11f86278c49886bf254d3ca883, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7301929397001553339, guid: 926f7d11f86278c49886bf254d3ca883, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 926f7d11f86278c49886bf254d3ca883, type: 3}
+--- !u!1 &1391554222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7301929396887836178, guid: 926f7d11f86278c49886bf254d3ca883, type: 3}
+  m_PrefabInstance: {fileID: 1391554221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1391554223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391554222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Device: 0
+  m_PoseSource: 2
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 1
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
 --- !u!1001 &1405357760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7075,6 +7118,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8139866868101619868, guid: 0a7f0ae3d53026146a1e4fac63633ba4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139866868769998681, guid: 0a7f0ae3d53026146a1e4fac63633ba4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139866869323466360, guid: 0a7f0ae3d53026146a1e4fac63633ba4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139866869574184055, guid: 0a7f0ae3d53026146a1e4fac63633ba4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8950891184437085081, guid: 0a7f0ae3d53026146a1e4fac63633ba4, type: 3}
       propertyPath: m_Name
       value: -----------------FIT-------------------
