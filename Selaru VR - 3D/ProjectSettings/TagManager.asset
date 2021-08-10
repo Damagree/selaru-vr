@@ -12,6 +12,8 @@ TagManager:
   - Door 2
   - Door 3
   - Door 4
+  - Audio
+  - BGM
   layers:
   - Default
   - TransparentFX
