@@ -108,6 +108,9 @@
 		<Email>SUREL</Email>
 		<Password>KATA SANDI</Password>
 		<Guest>TAMU</Guest>
+
+    <!--From here are for selaru UI GROUP-->
+    <Sound>Suara</Sound>
     </UIGroup>
 	
 	<InformationGroup>
@@ -116,6 +119,9 @@
 		<UserCreateSuccess>Proses registrasi user berhasil!</UserCreateSuccess>
 		<UserCreateFailure>Proses registrasi user gagal! Pastikan anda terhubung internet dan hanya membuat password dengan karakter: A-Z, a-z, 1-9</UserCreateFailure>
 		<PasswordNotSame>Password dan konfirmasi password tidak sama!</PasswordNotSame>
+
+    <!--From here are for selaru information-->
+    <WelcomeGate>Selamat Datang di Kampus Fakultas Ilmu Terapan</WelcomeGate>
 	</InformationGroup>
 	
 	<MessageGroup>

@@ -108,6 +108,9 @@
 		<Email>EMAIL</Email>
 		<Password>PASSWORD</Password>
 		<Guest>GUEST</Guest>
+
+    <!--From here are for selaru UI GROUP-->
+    <Sound>Sound</Sound>
 	</UIGroup>
 
 	<InformationGroup>
@@ -116,6 +119,11 @@
 		<UserCreateSuccess>User registration success!</UserCreateSuccess>
 		<UserCreateFailure>User registration failed! Make sure you're connected to internet and only make a password with those character: A-Z, a-z, 1-9</UserCreateFailure>
 		<PasswordNotSame>Password confirmation is invalid!</PasswordNotSame>
+
+    <!--From here are for selaru information-->
+    <WelcomeGate>Welcome to the campus of the faculty of applied sciences</WelcomeGate>
+    
+    
 	</InformationGroup>
 
 	<MessageGroup>
