@@ -18,6 +18,7 @@ public class TimeUI : MonoBehaviour
     {
         if (!isFinished)
         {
+            currentTime += Time.deltaTime;
             UpdateTimeText();
         }
     }
@@ -30,13 +31,12 @@ public class TimeUI : MonoBehaviour
 
     private void UpdateTimeText()
     {
-        currentTime += Time.deltaTime;
-        textTime.text = (currentTime / 60).ToString("00") + ":" + (currentTime % 60).ToString("00");
+        textTime.text = ((int)currentTime / 60).ToString("00") + ":" + ((int)currentTime % 60).ToString("00");
     }
 
     public void UpdateTimeScore()
     {
-        textScoreTime.text = (currentTime / 60).ToString("00") + ":" + (currentTime % 60).ToString("00");
+        textScoreTime.text = ((int)currentTime / 60).ToString("00") + ":" + ((int)currentTime % 60).ToString("00");
     }
 
 }

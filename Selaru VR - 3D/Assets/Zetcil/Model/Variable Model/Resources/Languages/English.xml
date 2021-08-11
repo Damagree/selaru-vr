@@ -111,6 +111,30 @@
 
     <!--From here are for selaru UI GROUP-->
     <Sound>Sound</Sound>
+    <ChallengeText>CHALLENGE</ChallengeText>
+    <ChallText>Try the Challenge?</ChallText>
+    <ExitDoor>Out of this room?</ExitDoor>
+
+    <ButtonY>Yes</ButtonY>
+
+    <TakeApar>Take This</TakeApar>
+
+    <AparTxt>ESTINGUISHER</AparTxt>
+
+    <WarningTxt>Danger!
+      An Electrical Shortcut Occurs On The Computer
+      Do something right away!</WarningTxt>
+
+    <WinSign>YOU DID IT!</WinSign>
+    <WinS1>Great job, you did it!</WinS1>
+    <Score>YOUR BEST TIME</Score>
+    <DurationTxt>Duration :</DurationTxt>
+
+    <BtnRetry>RETRY</BtnRetry>
+    <BtnDone>DONE</BtnDone>
+
+    <ExitApp>Are You Sure Wanna Exit?</ExitApp>
+    
 	</UIGroup>
 
 	<InformationGroup>
@@ -122,7 +146,55 @@
 
     <!--From here are for selaru information-->
     <WelcomeGate>Welcome to the campus of the faculty of applied sciences</WelcomeGate>
+    <AppDesc>Selaru VR is an application that contains  VR Tour and VR Light Fire Training to support the knowledge needs of a building, especially the Faculty of Applied Sciences at Telkom University.</AppDesc>
+
+    <BasicInfo1>Every office, especially an office with a high-rise building type, must have a fire prevention and control management program.</BasicInfo1>
+    <BasicInfo2>In addition to these efforts, the management of evacuation accessibility is also important to speed up the evacuation process that minimize the number of victims.</BasicInfo2>
+    <BasicInfo3>There are 3 causes of fires that can occur and will get bigger, namely:
+(1) Presence of flammable fuel or materials
+(2) The presence of a lighter source
+(3) The presence of oxygen in the air which functions to support combustion (ILO, 2018)</BasicInfo3>
+    <BasicInfo4>The ability to manage and reduce risks related to these 3 things will be an effective step in reducing the possibility of more severe fire.</BasicInfo4>
+    <BasicInfo5>One of these capabilities is the ability to quickly detect fires and the ability to control fires and extinguish them.</BasicInfo5>
+
+    <JenisApar>Types of Fire Extinguishers</JenisApar>
+    <JenisAparSub>*Click on the buttons below to show the information</JenisAparSub>
+    <JenisAparAir>Estinguisher types of liquid (water) use a red color code on the tube. This type of fire extinguisher should not be used for fires involving flammable liquids and gases, live electrical installations / equipment, and flammable metals </JenisAparAir>
+    <JenisAparFoam>Foam type fire extinguishers use a cream color code on the tube. This type of fire extinguisher should not be used in types of fires involving voltage electrical installations / equipment and flammable metals.</JenisAparFoam>
+    <JenisAparPowder>Foam type fire extinguishers use a blue color code on the tube. This type of fire extinguisher is not intended for types of fires involving installation of connections and flammable metals.</JenisAparPowder>
+    <JenisAparCo2>These fire extinguishers are used to extinguish Class B fires, which are flammable liquids, and are excellent for extinguishing fires involving a large number of electrical installations / equipment.</JenisAparCo2>
+    <JenisAparWet>Wet chemical fire extinguishers use a yellow color code on the tube. This type of fire extinguisher is not recommended for use in types of fires involving electrical equipment in operation, flammable liquids, and flammable metals.</JenisAparWet>
+
+    <ToolsApar>Light Fire Extinguisher (APAR), a tool that is light and can easily be used by one person in an effort to extinguish a fire at the start of the fire</ToolsApar>
+    <ToolsApab>Heavy fire extinguisher (APAB) using wheels</ToolsApab>
+    <ToolsAlarm>Fire alarm system, is a tool for notifying fire at an initial level which includes a manual fire alarm and / or an automatic fire alarm</ToolsAlarm>
+    <ToolsHydrant>Courtyard hydrant, namely hydrant outside the building</ToolsHydrant>
+    <ToolsSprinkler>Automatic sprinkler system, which is a fire extinguisher installation permanently installed to protect the building from fire hazards which will work automatically to emit water, if the appliance is exposed to heat at a certain temperature</ToolsSprinkler>
+    <ToolsVentilasi>Smoke control system, namely a natural or mechanical system that functions to emit smoke</ToolsVentilasi>
+
+    <KelasAparA>Class A ─ Fires containing solid materials except metal, such as wood, paper, plastic, rubber and textiles.</KelasAparA>
+    <KelasAparB>Class B ─ Fires involving flammable liquid materials, such as gasoline, petroleum, tar, oil, oil-based paints, solvents, etc. (which cannot mix with water). </KelasAparB>
+    <KelasAparC>Class C ─ Fires involving live electrical installations or equipment.</KelasAparC>
+    <KelasAparD>Class D ─ Fire in flammable metals, such as magnesium, titanium, zirconium, sodium, lithium and potassium.</KelasAparD>
+    <KelasAparK>Class K ─ Fires involving combustible cooking media, such as cooking oil and fat (animal and vegetable fats).</KelasAparK>
+
+    <HandlingSlide1>If the cause of the fire is very mild, extinguish the small fire with a damp cloth.</HandlingSlide1>
+    <HandlingSlide2>If the fire is not controlled with a wet cloth, go to the nearest fire extinguisher panel and take it to the fire site</HandlingSlide2>
+    <HandlingSlide3>Notify security and inform the location of the fire.</HandlingSlide3>
+    <HandlingSlide4>Try to put out the fire using the fire extinguisher properly. (Note: fire hoses should only be used by firefighters).</HandlingSlide4>
+    <HandlingSlide5>If it cannot be extinguished, close all doors leading to the fire site, notify security of the situation and initiate evacuation procedures.</HandlingSlide5>
+    <HandlingSlide6>Do not use the elevator and explain the situation when firefighters arrive.</HandlingSlide6>
+
+
+    <HowTo1>HOW TO USE ESTINGUISHER</HowTo1>
+    <HowTo2>Pull/Remove APAR lever locking pin / Extinguisher Tube.</HowTo2>
+    <HowTo3>Aim the hose at the center of the fire.</HowTo3>
+    <HowTo4>Press the lever to remove the contents of the APAR / Extinguisher Tube.</HowTo4>
+    <HowTo5>Apply evenly until the fire goes out. </HowTo5>
+
     
+
+
     
 	</InformationGroup>
 

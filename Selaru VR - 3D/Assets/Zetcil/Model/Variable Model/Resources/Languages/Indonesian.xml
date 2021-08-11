@@ -111,7 +111,32 @@
 
     <!--From here are for selaru UI GROUP-->
     <Sound>Suara</Sound>
-    </UIGroup>
+    <ChallengeText>TANTANGAN</ChallengeText>
+    <ChallText>Coba Tantangan?</ChallText>
+
+    <ExitDoor>Keluar dari ruangan ini?</ExitDoor>	
+    
+    <ButtonY>Ya</ButtonY>
+
+    <TakeApar>Ambil APAR</TakeApar>
+
+    <AparTxt>APAR</AparTxt>
+
+    <WarningTxt>Bahaya!
+      Terjadi Konsleting Listrik Pada Komputer
+      Segera lakukan sesuatu!</WarningTxt>
+
+    <WinSign>KAMU BERHASIL!</WinSign>
+    <WinS1>Penanganan yang baik!</WinS1>
+    <Score>WAKTU PENANGANAN</Score>
+    <DurationTxt>Duration :</DurationTxt>
+
+    <BtnRetry>RETRY</BtnRetry>
+    <BtnDone>DONE</BtnDone>
+
+    <ExitApp>Anda Yakin Ingin Keluar?</ExitApp>
+
+  </UIGroup>
 	
 	<InformationGroup>
 		<LoginFailed>Login gagal! Periksa username dan password anda!</LoginFailed>
@@ -122,6 +147,54 @@
 
     <!--From here are for selaru information-->
     <WelcomeGate>Selamat Datang di Kampus Fakultas Ilmu Terapan</WelcomeGate>
+		<AppDesc>Selaru VR merupakan aplikasi yang memuat VR Tour dan VR Light Fire Training sebagai penunjang kebutuhan pengetahuan terhadap sebuah gedung khususnya Fakultas Ilmu Terapan Telkom University.</AppDesc>
+    
+		<BasicInfo1>Setiap perkantoran, terutama kantor dengan tipe gedung bertingkat harus memiliki program manajemen pencegahan dan penanggulangan kebakaran.</BasicInfo1>
+    <BasicInfo2>Selain upaya tersebut, manajemen aksesibilitas evakuasi juga menjadi hal penting untuk mempercepat proses evakuasi sehingga dapat meminimalisir jumlah korban.</BasicInfo2>
+    <BasicInfo3>Terdapat 3 penyebab kebakaran bisa terjadi dan akan semakin membesar, yaitu : 
+(1) Adanya bahan bakar atau bahan yang mudah terbakar
+(2) Adanya sumber pemantik api 
+(3) Adanya oksigen di udara yang berfungsi mendukung pembakaran (ILO, 2018)</BasicInfo3>
+    <BasicInfo4>Kemampuan dalam mengelola dan mengurangi risiko terkait 3 hal tersebut akan menjadi langkah efektif dalam mengurangi kemungkinan terjadinya kebakaran yang lebih parah.</BasicInfo4>
+    <BasicInfo5>Salah satu kemampuan tersebut adalah kemampuan mendeteksi adanya kebakaran dengan cepat dan kemampuan dalam mengendalikan kebakaran serta memadamkannya.</BasicInfo5>
+    
+    <JenisApar>Macam-macam APAR</JenisApar>
+    <JenisAparSub>*Klik pada tombol-tombol dibawah untuk menunjukan informasi</JenisAparSub>
+    <JenisAparAir>APAR jenis cairan (air) menggunakan kode warna merah pada tabungnya. APAR jenis ini tidak boleh digunakan untuk kebakaran yang melibatkan cairan dan gas mudah terbakar, instalasi/peralatan listrik bertegangan, dan logam mudah terbakar</JenisAparAir>
+    <JenisAparFoam>APAR jenis busa menggunakan kode warna krem pada tabungnya. APAR jenis ini tidak boleh digunakan pada jenis kebakaran yang melibatkan instalasi/peralatan listrik bertegangan dan logam mudah terbakar.</JenisAparFoam>
+    <JenisAparPowder>APAR jenis powder menggunakan kode warna biru pada tabungnya. APAR jenis ini tidak diperuntukkan pada jenis kebakaran yang melibatkan instalasi hubungan dan logam mudah terbakar.</JenisAparPowder>
+    <JenisAparCo2>Kegunaan APAR ini untuk memadamkan kebakaran kelas B, yakni cairan mudah terbakar, serta baik sekali untuk memadamkan kebakaran yang melibatkan sejumlah besar instalasi/peralatan listrik bertegangan.</JenisAparCo2>
+    <JenisAparWet>APAR jenis bahan kimia basah menggunakan kode warna kuning pada tabungnya. APAR jenis ini tidak disarankan digunakan pada jenis kebakaran yang melibatkan peralatan listrik yang sedang beroperasi, cairan mudah terbakar, dan logam mudah terbakar.</JenisAparWet>
+        
+    <ToolsApar>Alat Pemadam Api Ringan (APAR), alat yang ringan dan dapat dengan mudah digunakan oleh satu orang dalam upaya memadamkan api pada awal terjadinya kebakaran</ToolsApar>
+    <ToolsApab>Alat Pemadam Api Berat (APAB) yang menggunakan roda</ToolsApab>
+    <ToolsAlarm>Sistem alarm kebakaran, merupakan alat untuk memberitahukan kebakaran tingkat awal yang mencakup alarm kebakaran manual dan/atau alarm kebakaran otomatis</ToolsAlarm>
+    <ToolsHydrant>Hydrant halaman, yaitu hydrant yang berada di luar bangunan gedung</ToolsHydrant>
+    <ToolsSprinkler>Sistem sprinkler otomatis, yaitu instalasi pemadam kebakaran yang dipasang secara permanen untuk melindungi bangunan dari bahaya kebakaran yang akan bekerja secara otomatis memancarkan air, apabila alat tersebut terkena panas pada temperature tertentu</ToolsSprinkler>
+    <ToolsVentilasi>Sistem pengendali asap, yaitu system alami atau mekanis yang berfungsi untuk mengeluarkan asap dari bangunan gedung sampai batas aman pada saat terjadi kebakaran.</ToolsVentilasi>
+
+    <KelasAparA>Kelas A ─ Kebakaran yang mengandung bahan padat kecuali logam, seperti kayu, kertas, plastik, karet, dan tekstil.</KelasAparA>
+    <KelasAparB>Kelas B ─ Kebakaran yang melibatkan bahan cair yang mudah terbakar, seperti bensin, minyak bumi, tar, minyak, cat berbasis minyak, pelarut, dan sebagainya (yang tidak dapat bercampur dengan air). </KelasAparB>
+    <KelasAparC>Kelas C ─ Kebakaran yang melibatkan instalasi atau peralatan listrik bertegangan.</KelasAparC>
+    <KelasAparD>Kelas D ─ Kebakaran pada logam yang mudah terbakar, seperti magnesium, titanium, zirkonium, natrium, litium, dan kalium.</KelasAparD>
+    <KelasAparK>Kelas K ─ Kebakaran yang melibatkan media masak mudah terbakar, seperti minyak goreng dan lemak (lemak hewani dan nabati).</KelasAparK>
+
+    <HandlingSlide1>Jika penyebab kebakaran sangat ringan, padamkan api kecil dengan kain basah.</HandlingSlide1>
+    <HandlingSlide2>Jika penyebab kebakaran sangat ringan, padamkan api kecil dengan kain basah.</HandlingSlide2>
+    <HandlingSlide3>Beri tahu pihak keamanan dan informasikan lokasi kebakaran.</HandlingSlide3>
+    <HandlingSlide4>Berusaha memadamkan api menggunakan APAR dengan benar.
+(Catatan: selang kebakaran hanya boleh digunakan oleh pihak pemadam kebakaran).</HandlingSlide4>
+    <HandlingSlide5>Jika tidak dapat dipadamkan, tutup semua pintu menuju ke lokasi kebakaran, beri tahu situasinya kepada pihak keamanan dan mulai prosedur evakuasi.</HandlingSlide5>
+    <HandlingSlide6>Jangan menggunakan lift dan jelaskan situasinya bila petugas pemadam kebakaran tiba.</HandlingSlide6>
+  
+		<HowTo1>CARA MENGGUNAKAN APAR</HowTo1>
+    <HowTo2>Tarik/Lepas Pin pengunci tuas APAR / Tabung Pemadam.</HowTo2>
+    <HowTo3>Arahkan selang ke titik pusat api.</HowTo3>
+    <HowTo4>Tekan tuas untuk mengeluarkan isi APAR / Tabung Pemadam.</HowTo4>
+    <HowTo5>Sapukan secara merata sampai api padam.</HowTo5>
+    
+
+  
 	</InformationGroup>
 	
 	<MessageGroup>

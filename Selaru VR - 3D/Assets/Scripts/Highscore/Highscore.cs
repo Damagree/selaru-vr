@@ -18,13 +18,20 @@ public class Highscore : MonoBehaviour
 
     private void Start()
     {
-        //PlayerPrefs.SetFloat(gameMode.ToString(), 1000);
+        //PlayerPrefs.SetFloat(gameMode.ToString(), 0);
         LoadHighscore();
     }
 
     public void SaveHighscore(float newScore)
     {
-        if (newScore < PlayerPrefs.GetFloat(gameMode.ToString()))
+        if (PlayerPrefs.GetFloat(gameMode.ToString(), 0) <= 0)
+        {
+            score = newScore;
+            PlayerPrefs.SetFloat(gameMode.ToString(), newScore);
+            Debug.Log("saved " + gameMode.ToString() + " score " + (newScore / 60).ToString("00") + ":" + (newScore % 60).ToString("00"));
+            LoadHighscore();
+        }
+        if (newScore < PlayerPrefs.GetFloat(gameMode.ToString(), 0))
         {
             score = newScore;
             PlayerPrefs.SetFloat(gameMode.ToString(), newScore);
