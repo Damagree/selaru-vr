@@ -134,6 +134,8 @@
     <BtnDone>DONE</BtnDone>
 
     <ExitApp>Are You Sure Wanna Exit?</ExitApp>
+    <Indonesian>INDONESIAN</Indonesian>
+    <English>ENGLISH</English>
     
 	</UIGroup>
 
@@ -192,7 +194,7 @@
     <HowTo4>Press the lever to remove the contents of the APAR / Extinguisher Tube.</HowTo4>
     <HowTo5>Apply evenly until the fire goes out. </HowTo5>
 
-    
+    <MadeBy>Made By MOBISAGA TEAM</MadeBy>
 
 
     

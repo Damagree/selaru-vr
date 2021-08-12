@@ -135,6 +135,8 @@
     <BtnDone>DONE</BtnDone>
 
     <ExitApp>Anda Yakin Ingin Keluar?</ExitApp>
+    <Indonesian>INDONESIA</Indonesian>
+    <English>INGGRIS</English>
 
   </UIGroup>
 	
@@ -192,6 +194,8 @@
     <HowTo3>Arahkan selang ke titik pusat api.</HowTo3>
     <HowTo4>Tekan tuas untuk mengeluarkan isi APAR / Tabung Pemadam.</HowTo4>
     <HowTo5>Sapukan secara merata sampai api padam.</HowTo5>
+
+    <MadeBy>Dibuat oleh MOBISAGA TEAM</MadeBy>
     
 
   

@@ -8,7 +8,7 @@ public class FireInteraction : MonoBehaviour
 
     [SerializeField, Tooltip("Fire Health")] private float health = 100f;
 
-    public UnityEvent eventAfterWin;
+    public UnityEvent eventAfterDeath;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,7 +19,8 @@ public class FireInteraction : MonoBehaviour
 
         if (health <= 0)
         {
-            eventAfterWin.Invoke();
+            FireData.count -= 1;
+            eventAfterDeath.Invoke();
         }
     }
 
