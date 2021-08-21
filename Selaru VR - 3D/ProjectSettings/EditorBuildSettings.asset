@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fire Training/Fire Guide.unity
     guid: 00bf21449bd4b1649b5ec61ffc33361f
+  - enabled: 1
+    path: Assets/Scenes/Fire Training/Fire Simulation2.unity
+    guid: 92dc4f160c993ca499767cb7618f988f
+  - enabled: 1
+    path: Assets/Scenes/Fire Training/Fire Simulation3.unity
+    guid: db467bba6b8d9d6449ae59e1b2f6d87c
   - enabled: 0
     path: Assets/Scenes/Sandbox/FireTraining Sample.unity
     guid: b627d186da549ad4091a8e41ccd1c147

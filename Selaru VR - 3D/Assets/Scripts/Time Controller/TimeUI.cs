@@ -27,6 +27,7 @@ public class TimeUI : MonoBehaviour
     {
         highscore.SaveHighscore(currentTime);
         isFinished = isFinish;
+        UpdateTimeScore();
     }
 
     private void UpdateTimeText()
