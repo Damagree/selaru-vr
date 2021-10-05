@@ -6535,11 +6535,11 @@ PrefabInstance:
       objectReference: {fileID: 1203776138}
     - target: {fileID: 6178714054198647042, guid: 3f32171383879b241af85702a76ea155, type: 3}
       propertyPath: challengeScenes.Array.data[0]
-      value: Fire Simulation
+      value: Fire Simulation3
       objectReference: {fileID: 0}
     - target: {fileID: 6178714054198647042, guid: 3f32171383879b241af85702a76ea155, type: 3}
       propertyPath: challengeScenes.Array.data[1]
-      value: Fire Simulation2
+      value: Fire Simulation
       objectReference: {fileID: 0}
     - target: {fileID: 6178714054198647042, guid: 3f32171383879b241af85702a76ea155, type: 3}
       propertyPath: challengeScenes.Array.data[2]
